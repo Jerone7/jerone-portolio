@@ -15,7 +15,6 @@ import {
   Database,
   Award,
   ChevronRight,
-  ExternalLink,
   Github,
   Sparkles,
   Lock,

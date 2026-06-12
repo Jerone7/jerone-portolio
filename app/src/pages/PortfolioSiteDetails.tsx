@@ -15,6 +15,7 @@ import {
   Code2,
   Layers,
   Layout,
+  ExternalLink,
   Github,
   Sparkles,
   GraduationCap,
