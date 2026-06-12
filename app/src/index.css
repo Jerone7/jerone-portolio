@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0F1720;
+    --bg-card: #1A2535;
+    --bg-card-alt: #141E2B;
+    --accent: #00C87A;
+    --accent-hover: #00E08A;
+    --text-primary: #FFFFFF;
+    --text-secondary: #8899AA;
+    --text-muted: #5A6B7D;
+    --border-color: #253545;
+    --skill-bar-bg: #253545;
+    --shadow-card: 0 4px 24px rgba(0,0,0,0.3);
+    --shadow-hover: 0 8px 32px rgba(0,200,122,0.15);
+
+    --background: 210 25% 9%;
+    --foreground: 0 0% 100%;
+    --card: 213 28% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 213 28% 15%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 153 100% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 28% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 213 20% 20%;
+    --muted-foreground: 210 15% 60%;
+    --accent-hsl: 153 100% 39%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 20% 20%;
+    --input: 213 20% 20%;
+    --ring: 153 100% 39%;
+    --radius: 0.625rem;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-[#253545];
+  }
+
+  ::selection {
+    background-color: rgba(0, 200, 122, 0.3);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 md:py-24 lg:py-28;
+  }
+
+  .container-custom {
+    @apply max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-bg {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-bg-alt {
+    background-color: var(--bg-card-alt);
+  }
+}
+
+@layer utilities {
+  .will-change-transform {
+    will-change: transform, opacity;
+  }
+}

@@ -1,0 +1,3 @@
+@echo off
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Copy-Item -Path 'C:\Users\Jeron\.gemini\antigravity-ide\brain\5384af5c-8ad5-4ea8-986b-732d751c9ff6\portfolio_cover_1781250474764.png' -Destination 'c:\Users\Jeron\Downloads\Kimi_Agent_Build Frontend Portfolio\app\public\portfolio-cover.png' -Force; Copy-Item -Path 'C:\Users\Jeron\.gemini\antigravity-ide\brain\5384af5c-8ad5-4ea8-986b-732d751c9ff6\skill_swap_cover_1781250495627.png' -Destination 'c:\Users\Jeron\Downloads\Kimi_Agent_Build Frontend Portfolio\app\public\skill-swap-cover.png' -Force; Write-Host 'Successfully copied covers!'"
+pause
