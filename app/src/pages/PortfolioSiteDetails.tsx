@@ -15,8 +15,6 @@ import {
   Code2,
   Layers,
   Layout,
-  ChevronRight,
-  ExternalLink,
   Github,
   Sparkles,
   GraduationCap,

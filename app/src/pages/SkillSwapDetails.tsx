@@ -14,8 +14,6 @@ import {
   Cpu,
   Database,
   Award,
-  ChevronRight,
-  ExternalLink,
   Github,
   Sparkles,
   Lock,
